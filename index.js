@@ -47,7 +47,7 @@ if (isMac()) {
   // install
   // run(`curl -Ls -o setup.exe https://go.microsoft.com/fwlink/?linkid=866662`);
   // run(`setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION="install" /PID="developer" /FEATURES=SQL,Tools`);
-  run(`choco install sql-server-2019`);
+  run(`choco install sql-server-${sqlserverVersion} -r --params="'/SAPWD:YourStrong!Passw0rd'"`);
 } else {
   // install
   run(`wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`);
