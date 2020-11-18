@@ -3,7 +3,7 @@
 The missing action for SQL Server :tada:
 
 - Simpler than containers
-- Works on Linux (`ubuntu-18.04` and `ubuntu-16.04`)
+- Works on Linux (`ubuntu-18.04` and `ubuntu-16.04`) and Windows
 - Supports different versions
 
 [![Build Status](https://github.com/ankane/setup-sqlserver/workflows/build/badge.svg?branch=v1)](https://github.com/ankane/setup-sqlserver/actions)
@@ -72,6 +72,7 @@ Run queries
 
 - [Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu)
 - [Unattended SQL Server installation script for Ubuntu](https://docs.microsoft.com/en-us/sql/linux/sample-unattended-install-ubuntu)
+- [Install SQL Server from the Command Prompt](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt)
 
 ## Contributing
 

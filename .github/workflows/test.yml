@@ -7,10 +7,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-18.04, ubuntu-16.04]
-        sqlserver-version: [2019, 2017]
+        # os: [ubuntu-18.04, ubuntu-16.04]
+        # sqlserver-version: [2019, 2017]
+        os: [windows-2019]
+        sqlserver-version: [2019]
     steps:
-    - uses: ankane/setup-sqlserver@v1
+    - uses: ankane/setup-sqlserver@windows
       with:
         sqlserver-version: ${{ matrix.sqlserver-version }}
         accept-eula: true

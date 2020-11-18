@@ -44,7 +44,9 @@ if (![2019, 2017].includes(sqlserverVersion)) {
 if (isMac()) {
   throw `Mac not supported`;
 } else if (isWindows()) {
-  throw `Windows not supported yet`;
+  // install
+  run(`curl -Ls -o setup.exe https://go.microsoft.com/fwlink/?linkid=866662`);
+  run(`setup.exe`);
 } else {
   // install
   run(`wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`);
