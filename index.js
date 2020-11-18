@@ -46,7 +46,7 @@ if (isMac()) {
 } else if (isWindows()) {
   // install
   run(`curl -Ls -o setup.exe https://go.microsoft.com/fwlink/?linkid=866662`);
-  run(`setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION="install" /PID="developer" /FEATURES=SQL,AS,IS,Tools`);
+  run(`setup.exe /QS /IACCEPTSQLSERVERLICENSETERMS /ACTION="install" /PID="developer" /FEATURES=SQL,AS,IS,Tools`);
 } else {
   // install
   run(`wget -qO- https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -`);
